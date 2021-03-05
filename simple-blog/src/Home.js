@@ -1,24 +1,24 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import BlogList from './BlogList'
 
 const Home = () => {
 
     // eslint-disable-next-line no-unused-vars
-    const [blogs, setBlogs] = useState([
-        { title: 'Blog 01', body: 'Lorem ipsum...', author: 'Kayque', id: 1 }, 
-        { title: 'Blog 02', body: 'Lorem ipsum...', author: 'Thiago', id: 2 }, 
-        { title: 'Blog 03', body: 'Lorem ipsum...', author: 'Kayque', id: 3 } 
-    ])
+    const [blogs, setBlogs] = useState(null)
 
-    const handleDelete = (id) =>{
-        const newBlogs = blogs.filter(blog => blog.id !== id)
-        setBlogs(newBlogs)
-    }
+    useEffect(() => {
+        fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json()
+            })
+            .then(data => {
+                setBlogs(data)
+            })
+    }, [])
 
     return ( 
         <div className="home">
-            <BlogList blogs={blogs} title="All Blogs!" handleDelete={handleDelete}/>
-            <BlogList blogs={blogs.filter((blog) => blog.author === 'Kayque')} title="Kayque's blogs" />
+            {blogs && <BlogList blogs={blogs} title="All Blogs!"/>}
         </div>
      )
 }
