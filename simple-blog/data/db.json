@@ -1,16 +1,16 @@
 {
-    "blogs": [
-        {
-            "title": "My first Blog",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non quam ac nibh laoreet mollis. Morbi ullamcorper a augue ut sollicitudin. Sed id mollis mauris. Nunc lacinia accumsan neque in faucibus. Praesent vel urna iaculis eros semper convallis sed a ipsum. Aenean ultricies mattis sem eu finibus. Nulla auctor felis sit amet ullamcorper fermentum. Donec placerat purus vitae euismod ultricies.",
-            "author": "Kayque",
-            "id": "1"     
-        },
-        {
-            "title": "Second blog",
-            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non quam ac nibh laoreet mollis. Morbi ullamcorper a augue ut sollicitudin. Sed id mollis mauris. Nunc lacinia accumsan neque in faucibus. Praesent vel urna iaculis eros semper convallis sed a ipsum. Aenean ultricies mattis sem eu finibus. Nulla auctor felis sit amet ullamcorper fermentum. Donec placerat purus vitae euismod ultricies.",
-            "author": "Thiago",
-            "id": "2" 
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My first Blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non quam ac nibh laoreet mollis. Morbi ullamcorper a augue ut sollicitudin. Sed id mollis mauris. Nunc lacinia accumsan neque in faucibus. Praesent vel urna iaculis eros semper convallis sed a ipsum. Aenean ultricies mattis sem eu finibus. Nulla auctor felis sit amet ullamcorper fermentum. Donec placerat purus vitae euismod ultricies.",
+      "author": "Kayque",
+      "id": "1"
+    },
+    {
+      "title": "Second blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non quam ac nibh laoreet mollis. Morbi ullamcorper a augue ut sollicitudin. Sed id mollis mauris. Nunc lacinia accumsan neque in faucibus. Praesent vel urna iaculis eros semper convallis sed a ipsum. Aenean ultricies mattis sem eu finibus. Nulla auctor felis sit amet ullamcorper fermentum. Donec placerat purus vitae euismod ultricies.",
+      "author": "Thiago",
+      "id": "2"
+    }
+  ]
 }
